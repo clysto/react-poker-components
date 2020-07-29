@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   font-size: 22px;
+  font-family: "Noto Sans SC", sans-serif;
 }
 
 .pattern {

@@ -84,3 +84,7 @@
   align-self: center;
   font-size: 26px;
 }
+
+.suitSmall {
+  font-family: "Noto Sans SC", sans-serif;
+}

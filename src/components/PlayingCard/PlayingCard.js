@@ -27,7 +27,7 @@ function PlayingCard(props) {
           })}
         >
           <div>{props.point}</div>
-          <div>{props.suit}</div>
+          <div className={styles.suitSmall}>{props.suit}</div>
         </div>
         <div
           className={classNames(styles.textBottom, styles.text, {
@@ -35,15 +35,23 @@ function PlayingCard(props) {
           })}
         >
           <div>{props.point}</div>
-          <div>{props.suit}</div>
+          <div className={styles.suitSmall}>{props.suit}</div>
         </div>
         <div className={styles.pattern}>
           {props.size !== "small" ? (
-            <CardPatern suit={props.suit} point={props.point} size={props.size} />
+            <CardPatern
+              suit={props.suit}
+              point={props.point}
+              size={props.size}
+            />
           ) : (
-            <div className={classNames(styles.suit, {
-              [styles.red]: isRed(props.suit),
-            })}>{props.suit}</div>
+            <div
+              className={classNames(styles.suit, {
+                [styles.red]: isRed(props.suit),
+              })}
+            >
+              {props.suit}
+            </div>
           )}
         </div>
       </div>
