@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+.test-card {
+  margin: 5px;
+  transition: box-shadow 500ms;
+}
+.test-card:hover {
+  margin: 5px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+.control {
+  padding: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn-group :first-child {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-group :last-child {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-right: none !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-group {
+  border-radius: 5px;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
 }
 
-.App-link {
-  color: #61dafb;
+.btn-group button {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  appearance: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  background: #ffffff;
+  border-right: 1px solid #ececec;
+  transition: background-color 200ms;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-group button:hover {
+  background-color: #ececec;
+}
+
+.btn-group button:active {
+  background-color: #dfdfdf;
 }

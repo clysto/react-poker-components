@@ -1,0 +1,58 @@
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 22px;
+}
+
+.pattern {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.col32 {
+  align-self: center;
+  height: 66%;
+}
+
+.col31 {
+  align-self: center;
+  height: 66%;
+}
+
+.col42,
+.col41 {
+  align-self: center;
+  height: 75%;
+}
+
+.colOne {
+  align-self: center;
+}
+
+.colOneBig {
+  align-self: center;
+  font-size: 35px;
+}
+
+.red {
+  color: #e44145;
+}
+
+.wrapper {
+  flex: 1;
+  display: flex;
+}
+
+.big .col {
+  font-size: 30px;
+}
+
+.big .colOneBig {
+  font-size: 38px;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}

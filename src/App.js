@@ -1,24 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+
+import { ALL_POINTS, ALL_SUITS } from "./components/PlayingCard/constants";
+import PlayingCard from "./components/PlayingCard";
 
 function App() {
+  const [size, setSize] = useState("normal");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="control">
+        <div className="btn-group">
+          <button onClick={() => setSize("small")}>small</button>
+          <button onClick={() => setSize("normal")}>normal</button>
+          <button onClick={() => setSize("big")}>big</button>
+        </div>
+      </div>
+      <div>
+        {ALL_POINTS.map((point) => {
+          return ALL_SUITS.map((suit) => {
+            return (
+              <PlayingCard
+                size={size}
+                suit={suit}
+                point={point}
+                key={suit + point}
+                className="test-card"
+              ></PlayingCard>
+            );
+          });
+        })}
+      </div>
     </div>
   );
 }
