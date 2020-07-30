@@ -14,7 +14,7 @@ function App() {
           Playing Cards Galary
           <iframe
             src="https://ghbtns.com/github-btn.html?user=clysto&repo=react-poker-components&type=star&count=true&size=large"
-            frameborder="0"
+            frameBorder="0"
             scrolling="0"
             width="170"
             height="30"
