@@ -9,6 +9,7 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   background-color: #ffffff;
+  cursor: default;
 }
 
 .inner {

@@ -4,6 +4,7 @@
   justify-content: space-between;
   font-size: 22px;
   font-family: "Noto Sans SC", sans-serif;
+  line-height: 1;
 }
 
 .pattern {
@@ -14,18 +15,18 @@
 
 .col32 {
   align-self: center;
-  height: 66%;
+  height: calc(50% + 11px);
 }
 
 .col31 {
   align-self: center;
-  height: 66%;
+  height: calc(50% + 11px);
 }
 
 .col42,
 .col41 {
   align-self: center;
-  height: 75%;
+  height: calc(65% + 11px);
 }
 
 .colOne {
